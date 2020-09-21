@@ -25,10 +25,6 @@ public class PostpaidInfoResponseDBConfig {
 	@ConfigurationProperties(prefix = "spring.datasource")
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
-	    dataSource.setDriverClassName("oracle.jdbc.driver.OracleDriver");
-	    dataSource.setUrl("jdbc:oracle:thin:@(DESCRIPTION =(ADDRESS_LIST=(ADDRESS= (PROTOCOL = TCP)(HOST = 172.21.5.102)(PORT = 1521)) (ADDRESS= (PROTOCOL = TCP)(HOST = 172.21.5.103)(PORT = 1521))(FAILOVER = on)(LOAD_BALANCE = on))(CONNECT_DATA=(SERVICE_NAME = vas)))");
-	    dataSource.setUsername("vassdp");
-	    dataSource.setPassword("va55dp1");
 	    return dataSource;
 	}
 
