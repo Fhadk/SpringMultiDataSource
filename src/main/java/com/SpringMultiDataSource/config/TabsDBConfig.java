@@ -26,10 +26,6 @@ public class TabsDBConfig {
 //	@ConfigurationProperties(prefix = "Tabs.datasource")
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
-	    dataSource.setDriverClassName("oracle.jdbc.driver.OracleDriver");
-	    dataSource.setUrl("jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=172.21.5.100)(PORT=1521)) (ADDRESS=(PROTOCOL=TCP)(HOST=172.21.5.101)(PORT=1521)) (ADDRESS=(PROTOCOL=TCP)(HOST=172.21.5.100)(PORT=1521)) (FAILOVER=on) (LOAD_BALANCE=off) (CONNECT_DATA=(SERVICE_NAME=tabsprod.waridtel.com)))");
-	    dataSource.setUsername("vasdev");
-	    dataSource.setPassword("i3af#827");
 	    return dataSource;
 	}
 	
